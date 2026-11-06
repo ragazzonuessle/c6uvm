@@ -1,0 +1,20 @@
+train:
+  subtype_steps: 400
+  subtype_lr: 0.01
+  weight_decay: 0.0001
+  seed: 42
+conformal:
+  alpha: 0.10
+  cal_fraction: 0.386
+  width_budget: 6.6
+  pe_threshold: 4
+  quantile_steps: 300
+  quantile_lr: 0.05
+eval:
+  bootstrap: 1000
+  mcid: 0.05
+  seeds: [42, 128, 256, 512, 1024, 2048, 4096, 8192, 16384, 32768]
+  ece_bins: 10
+  holm_alpha: 0.05
+  bh_q: 0.10
+  net_benefit_thresholds: [0.10, 0.25, 0.40]

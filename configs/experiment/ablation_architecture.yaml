@@ -1,0 +1,10 @@
+defaults:
+  - ../model/c6
+  - ../data/cohorts
+  - ../train/calibration
+name: ablation_architecture_no_kg_first
+agents: [subtype, pathway, pathology, therapy, router, conformal]
+kg_first: false
+router_backbone: opus-4.7
+vlm_backbone: conch
+holdout_cohort: null

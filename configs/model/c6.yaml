@@ -1,0 +1,15 @@
+model:
+  rna_dim: 15
+  subtype_hidden: 64
+  tile_dim: 32
+  vlm_regions: 16
+  vlm_embed: 48
+  router_weights:
+    subtype: 1.0
+    pathway: 0.8
+    pathology: 0.9
+    therapy: 0.5
+graph:
+  hop_budget: 3
+  string_tau: 0.7
+  class2_expand_hops: 2

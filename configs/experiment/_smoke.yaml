@@ -1,0 +1,23 @@
+# for unit-test smoke only; do not use for reporting
+defaults:
+  - ../model/c6
+  - ../data/cohorts
+  - ../train/calibration
+name: smoke
+agents: [subtype, pathway, pathology, therapy, router, conformal]
+kg_first: true
+router_backbone: opus-4.7
+vlm_backbone: conch
+holdout_cohort: null
+cohort:
+  sizes:
+    TCGA-UVM: 24
+    GSE22138: 20
+    GSE44295: 18
+    GSE84976: 12
+train:
+  subtype_steps: 6
+eval:
+  bootstrap: 16
+conformal:
+  quantile_steps: 12

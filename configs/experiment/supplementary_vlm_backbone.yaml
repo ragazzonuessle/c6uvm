@@ -1,0 +1,10 @@
+defaults:
+  - ../model/c6
+  - ../data/cohorts
+  - ../train/calibration
+name: supplementary_vlm_virchow2
+agents: [subtype, pathway, pathology, therapy, router, conformal]
+kg_first: true
+router_backbone: opus-4.7
+vlm_backbone: virchow2
+holdout_cohort: null

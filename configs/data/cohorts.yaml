@@ -1,0 +1,19 @@
+cohort:
+  sizes:
+    TCGA-UVM: 80
+    GSE22138: 63
+    GSE44295: 57
+    GSE84976: 28
+  bap1_null_rate: 0.491
+  monosomy3_rate: 0.518
+  class2_rate: 0.539
+  gnaq_rate: 0.588
+  gna11_rate: 0.360
+  sf3b1_rate: 0.20
+  eif1ax_rate: 0.18
+  wsi_coverage: 0.70
+  censoring_rate: 0.55
+  risk_scale: 2.4
+  class_signal: 5.0
+  n_genes: 15
+  seed: 68
